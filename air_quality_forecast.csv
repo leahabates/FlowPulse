@@ -1,0 +1,7 @@
+id,time_stamp,reporting_area,state_code,parameter_name,aqi,category_number,category_name,action_day,discussion,latitude,longitude
+1,2025-08-15T16:18:52.763Z,"Dane, Columbia, and Sauk Counties",WI,O3,-1,1,"Good",false,"",43.0334,-89.4512
+2,2025-08-15T16:18:52.763Z,"Dane, Columbia, and Sauk Counties",WI,PM2.5,-1,2,"Moderate",false,"",43.0334,-89.4512
+3,2025-08-15T16:18:52.763Z,"Dane, Columbia, and Sauk Counties",WI,O3,-1,1,"Good",false,"",43.0334,-89.4512
+4,2025-08-15T16:18:52.763Z,"Dane, Columbia, and Sauk Counties",WI,PM2.5,-1,2,"Moderate",false,"",43.0334,-89.4512
+5,2025-08-15T16:18:52.763Z,"Dane, Columbia, and Sauk Counties",WI,O3,-1,1,"Good",false,"",43.0334,-89.4512
+6,2025-08-15T16:18:52.763Z,"Dane, Columbia, and Sauk Counties",WI,PM2.5,-1,2,"Moderate",false,"",43.0334,-89.4512
