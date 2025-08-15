@@ -52,7 +52,18 @@ app.get("/airquality", async (req, res) => {
     console.log("/airquality route: Fetching from URL:", apiUrl);
 
     const apiResponse = await fetch(apiUrl);
-    const data = await apiResponse.json();
+    let data = await apiResponse.json();
+
+    // Add lat/lon for each reporting area
+    data = data.map(item => {
+      // Simple approximation: use the request coordinates for all rows
+      // (AirNow forecast API doesn’t return lat/lon per city)
+      return {
+        ...item,
+        Latitude: latitude,
+        Longitude: longitude
+      };
+    });
 
     res.json(data);
   } catch (err) {
@@ -60,6 +71,7 @@ app.get("/airquality", async (req, res) => {
     res.status(500).send({ error: "Error fetching air quality data." });
   }
 });
+
 
 // -----------------------
 // Live Current Air Quality Route
